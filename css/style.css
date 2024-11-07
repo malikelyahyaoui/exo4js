@@ -1,0 +1,78 @@
+
+header {
+    background-color: grey;
+}
+
+
+.tete {
+    text-align: center;
+    height: 50px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.carre1, .carre2, .carre3 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.carre1 {
+    background-color: blue;
+    
+}
+
+.carre2 {
+    background-color: cornflowerblue;
+    
+}
+
+.carre3 {
+    background-color: mediumvioletred;
+    
+}
+
+.name {
+    display: none;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+i {
+    font-size: 40px;
+    color: white;
+}
+
+
+
+.carre1.active, .carre2.active, .carre3.active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.carre1.active .name,
+.carre2.active .name,
+.carre3.active .name {
+    display: block;
+}
+
+
