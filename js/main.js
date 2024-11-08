@@ -1,4 +1,4 @@
-// changer couleur du fond
+// changer couleur du fonda
 function changerStyle(couleur, nomRéseau) {
     const header = document.querySelector('header');
     const icones = document.querySelectorAll('.carre1, .carre2, .carre3');
